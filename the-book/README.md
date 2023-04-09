@@ -13,3 +13,5 @@ fn main() {
     println!("Hello, World!");
 }
 ```
+
+`main` is always the first code that runs in every executable Rust program.
