@@ -23,4 +23,18 @@ Rust is an ahead-of-time compiled language, meaning you can compile a program an
 
 Cargo is Rust’s build system and package manager.
 
-Create new project with cargo `cargo new hello_cargo`.
+Create new project with cargo `cargo new hello_cargo`. This creates 2 files:
+ - `Cargo.toml` - configuration file
+ - `src/main.rs`
+ 
+ `Cargo.toml`
+ ```toml
+ [package]
+name = "hello_cargo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ ```
