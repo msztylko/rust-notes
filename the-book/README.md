@@ -5,3 +5,5 @@ Notes from reading [The Rust Programming Language](https://doc.rust-lang.org/boo
 ### Installing Rust on MacOS
 
 Use `rustup` for managing Rust versions and follow [Installing rustup on Linux or macOS](https://doc.rust-lang.org/book/ch01-01-installation.html#installing-rustup-on-linux-or-macos)
+
+### [Hello, World!](https://doc.rust-lang.org/book/ch01-02-hello-world.html#hello-world)
