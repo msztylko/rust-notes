@@ -18,3 +18,7 @@ fn main() {
 `println!` is a Rust macro. `!` means that you're calling a macro instead of a normal function.
 
 Rust is an ahead-of-time compiled language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed.
+
+### [Cargo](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html#hello-cargo)
+
+Cargo is Rust’s build system and package manager.
