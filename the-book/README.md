@@ -44,3 +44,7 @@ In Rust, packages of code are referred to as **crates**.
 Cargo expects your source files to live inside the src directory. The top-level project directory is just for README files, license information, configuration files, and anything else not related to your code.
 
 Build cargo project with `cargo build`. This creates an executable in `target/debug/hello_cargo`. Now you can the executable with `./target/debug/hello_cargo`. You can also use `cargo run` instead which will compile the code and the run the executable. 
+
+Cargo also provides `cargo check` which quickly checks if your code compiles but doesn't produce an executable.
+
+Why would you not want an executable? Often, `cargo check` is much faster than `cargo build` because it skips the step of producing an executable. If you’re continually checking your work while writing the code, using `cargo check` will speed up the process of letting you know if your project is still compiling! As such, many Rustaceans run cargo check periodically as they write their program to make sure it compiles. Then they run `cargo build` when they’re ready to use the executable.
