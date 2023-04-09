@@ -2,6 +2,8 @@
 
 Notes from reading [The Rust Programming Language](https://doc.rust-lang.org/book/)
 
+## Getting Started
+
 ### Installing Rust on MacOS
 
 Use `rustup` for managing Rust versions and follow [Installing rustup on Linux or macOS](https://doc.rust-lang.org/book/ch01-01-installation.html#installing-rustup-on-linux-or-macos)
@@ -48,3 +50,17 @@ Build cargo project with `cargo build`. This creates an executable in `target/de
 Cargo also provides `cargo check` which quickly checks if your code compiles but doesn't produce an executable.
 
 Why would you not want an executable? Often, `cargo check` is much faster than `cargo build` because it skips the step of producing an executable. If you’re continually checking your work while writing the code, using `cargo check` will speed up the process of letting you know if your project is still compiling! As such, many Rustaceans run cargo check periodically as they write their program to make sure it compiles. Then they run `cargo build` when they’re ready to use the executable.
+
+#### Building for Release
+
+When your project is finally ready for release, you can use `cargo build --release` to compile it with optimizations. This command will create an executable in *target/release* instead of *target/debug*. The optimizations make your Rust code run faster, but turning them on lengthens the time it takes for your program to compile. This is why there are two different profiles: one for development, when you want to rebuild quickly and often, and another for building the final program you’ll give to a user that won’t be rebuilt repeatedly and that will run as fast as possible. If you’re benchmarking your code’s running time, be sure to run `cargo build --release` and benchmark with the executable in *target/release*.
+
+#### Cargo as Convention
+
+It is common to run
+
+```bash
+$ git clone example.org/someproject
+$ cd someproject
+$ cargo build
+```
