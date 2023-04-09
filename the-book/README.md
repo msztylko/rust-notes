@@ -14,4 +14,5 @@ fn main() {
 }
 ```
 
-`main` is always the first code that runs in every executable Rust program.
+`main` is always the first code that runs in every executable Rust program.  
+`println!` is a Rust macro. `!` means that you're calling a macro instead of a normal function.
