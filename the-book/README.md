@@ -16,3 +16,5 @@ fn main() {
 
 `main` is always the first code that runs in every executable Rust program.  
 `println!` is a Rust macro. `!` means that you're calling a macro instead of a normal function.
+
+Rust is an ahead-of-time compiled language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed.
