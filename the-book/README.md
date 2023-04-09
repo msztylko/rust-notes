@@ -22,3 +22,5 @@ Rust is an ahead-of-time compiled language, meaning you can compile a program an
 ### [Cargo](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html#hello-cargo)
 
 Cargo is Rust’s build system and package manager.
+
+Create new project with cargo `cargo new hello_cargo`.
