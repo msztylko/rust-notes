@@ -38,3 +38,5 @@ edition = "2021"
 
 [dependencies]
  ```
+
+In Rust, packages of code are referred to as **crates**. 
