@@ -64,3 +64,11 @@ $ git clone example.org/someproject
 $ cd someproject
 $ cargo build
 ```
+
+### Rust in Jupyter Notebook
+
+[Evcxr](https://github.com/evcxr/evcxr) allows you to run Rust in jupyter notebooks. You can easilly install it with cargo:
+```bash
+cargo install evcxr_jupyter
+evcxr_jupyter --install
+```
